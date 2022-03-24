@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/formEvent.js" defer></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="js_form">
+            <div class="search">
+                <form action="search.do" method="post" id="search">
+                    <input type="text" name="searchCon" id="searchCon" placeholder="검색어를 입력하세요">
+                    <input type="button" value="검색" id="searchBtn">
+                </form>
+            </div>
+            <div class="joinForm">
+                <h3>Sign up</h3>
+                <div class="join-con">
+                    <form action="joinOk.do" method="post" id="joinForm">
+                        <input type="text" name="userId" id="userId" placeholder="아이디 입력"><br>
+                        <input type="password" name="userPw" id="userPw" placeholder="비밀번호 입력"><br>
+                        <input type="password"  id="userPw2" placeholder="비밀번호 확인"><br>
+                        <p class="check"></p>
+                        <select name="city" id="city">
+                            <option value="" selected> :: 주소</option>
+                            <option value="서울"> 서울</option>
+                            <option value="부산"> 부산</option>
+                        </select><br>
+                        <input type="button" value="회원 가입" id="joinBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
